@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="title">Demo</string>
+    <string name="logo_fh">Video</string>
+    <string name="logo_sh">Production</string>
+    <string name="abous_us">Abous us</string>
+    <string name="about_us_text">We\'re a video production agency helping businesses &amp; brands achieve their goals with video. We believe video should deliver results. Our approach combines expertise &amp; passion with a deep understanding of you and your audience to make videos that engage, inspire and compel people to act.</string>
+    <string name="contact">Get in touch</string>
+    <string name="address">Street number 7</string>
+    <string name="access_time">8AM-16PM Mo-Fr</string>
+    <string name="phone_number">+40 777 777 777</string>
+    <string name="link">MihailProductions.com</string>
+</resources>
