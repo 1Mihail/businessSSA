@@ -3,115 +3,95 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
-<LinearLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical"
-    tools:context="com.mihailproductions.BusinessSSA.MainActivity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.85"
-            android:scaleType="centerCrop"
-            android:src="@drawable/video_production" />
-
-        <TextView
-            android:id="@+id/title"
-            style="@style/shadow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margins"
-            android:layout_marginTop="@dimen/margins"
-            android:text="@string/title"
-            android:textAllCaps="true"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/title_size"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/logo_fh"
-            style="@style/logo"
-            android:layout_marginTop="@dimen/margins2"
-            android:text="@string/logo_fh" />
-
-        <TextView
-            style="@style/logo"
-            android:layout_below="@id/logo_fh"
-            android:text="@string/logo_sh" />
-    </RelativeLayout>
-
     <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="@dimen/margins"
-        android:layout_weight="3"
-        android:background="@drawable/wrapper"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context="com.mihailproductions.BusinessSSA.MainActivity">
 
-        <TextView
-            style="@style/h1"
-            android:text="@string/abous_us" />
-
-        <TextView
-            style="@style/h2"
-            android:text="@string/about_us_text" />
-        <TextView
-            style="@style/h1"
-            android:text="@string/contact"/>
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/headerContainer">
+
             <ImageView
-                android:id="@+id/location"
-                style="@style/icon"
-                android:src="@drawable/ic_place_black_24dp"/>
+                style="@style/headerImage"/>
+
             <TextView
-                style="@style/h2"
-                android:id="@+id/address"
-                android:text="@string/address"
-                android:layout_toRightOf="@id/location"/>
-            <ImageView
-                style="@style/icon"
-                android:id="@+id/access_time"
-                android:src="@drawable/ic_access_time_black_24dp"
-                android:layout_below="@id/location"/>
+                android:id="@+id/title"
+                style="@style/title"/>
+
             <TextView
-                style="@style/h2"
-                android:id="@+id/access_time_text"
-                android:text="@string/access_time"
-                android:layout_toRightOf="@id/access_time"
-                android:layout_below="@id/address"/>
-            <ImageView
-                style="@style/icon"
-                android:id="@+id/phone"
-                android:src="@drawable/ic_phone_black_24dp"
-                android:layout_below="@id/access_time"/>
+                android:id="@+id/logo_fh"
+                style="@style/logo"
+                android:layout_marginTop="@dimen/margins2"
+                android:text="@string/logo_fh" />
+
             <TextView
-                style="@style/h2"
-                android:text="@string/phone_number"
-                android:id="@+id/phone_number"
-                android:layout_below="@id/access_time_text"
-                android:layout_toRightOf="@id/phone"/>
-            <ImageView
-                style="@style/icon"
-                android:id="@+id/link_icon"
-                android:src="@drawable/ic_web_link_24dp"
-                android:layout_below="@id/phone"/>
-            <TextView
-                style="@style/h2"
-                android:text="@string/link"
-                android:layout_below="@id/phone_number"
-                android:layout_toRightOf="@id/link_icon"/>
+                style="@style/logo"
+                android:layout_below="@id/logo_fh"
+                android:text="@string/logo_sh" />
         </RelativeLayout>
+
+        <LinearLayout
+            style="@style/bodyContainer">
+
+            <TextView
+                style="@style/h1"
+                android:text="@string/abous_us" />
+
+            <TextView
+                style="@style/h2"
+                android:text="@string/about_us_text" />
+            <TextView
+                style="@style/h1"
+                android:text="@string/contact"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/location"
+                    style="@style/icon"
+                    android:src="@drawable/ic_place_black_24dp"/>
+                <TextView
+                    style="@style/h2"
+                    android:id="@+id/address"
+                    android:text="@string/address"
+                    android:layout_toRightOf="@id/location"/>
+                <ImageView
+                    style="@style/icon"
+                    android:id="@+id/access_time"
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    android:layout_below="@id/location"/>
+                <TextView
+                    style="@style/h2"
+                    android:id="@+id/access_time_text"
+                    android:text="@string/access_time"
+                    android:layout_toRightOf="@id/access_time"
+                    android:layout_below="@id/address"/>
+                <ImageView
+                    style="@style/icon"
+                    android:id="@+id/phone"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:layout_below="@id/access_time"/>
+                <TextView
+                    style="@style/h2"
+                    android:text="@string/phone_number"
+                    android:id="@+id/phone_number"
+                    android:layout_below="@id/access_time_text"
+                    android:layout_toRightOf="@id/phone"/>
+                <ImageView
+                    style="@style/icon"
+                    android:id="@+id/link_icon"
+                    android:src="@drawable/ic_web_link_24dp"
+                    android:layout_below="@id/phone"/>
+                <TextView
+                    style="@style/h2"
+                    android:text="@string/link"
+                    android:layout_below="@id/phone_number"
+                    android:layout_toRightOf="@id/link_icon"/>
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
 </ScrollView>
