@@ -6,9 +6,9 @@
     <dimen name="margins2">24dp</dimen>
     <dimen name="margins3">18dp</dimen>
     <dimen name="spacer">8dp</dimen>
-    <dimen name="stroke_size">3dip</dimen>
-    <dimen name="radius_size">10dip</dimen>
+    <dimen name="stroke_size">3dp</dimen>
+    <dimen name="radius_size">10dp</dimen>
     <dimen name="h1_size">18sp</dimen>
     <dimen name="h2_size">16sp</dimen>
-    <!--<dimen name="icon_size">24dp</dimen>-->
+    <dimen name="weightRatio">0dp</dimen>
 </resources>
