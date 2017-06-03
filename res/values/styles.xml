@@ -43,7 +43,37 @@
         <item name="android:layout_marginLeft">@dimen/margins</item>
         <item name="android:layout_marginBottom">@dimen/margins3</item>
     </style>
-
+    <style name="headerContainer">
+        <item name="android:layout_height">@dimen/weightRatio</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="headerImage">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:alpha">0.85</item>
+        <item name="android:src">@drawable/video_production</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="title" parent="shadow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margins</item>
+        <item name="android:layout_marginTop">@dimen/margins</item>
+        <item name="android:text">@string/title</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bodyContainer">
+        <item name="android:layout_height">@dimen/weightRatio</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+        <item name="android:background">@drawable/wrapper</item>
+    </style>
     <style name="icon">
         <item name="android:layout_marginLeft">@dimen/margins</item>
         <item name="android:layout_marginBottom">@dimen/margins</item>
